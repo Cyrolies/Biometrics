@@ -1,0 +1,16 @@
+C:\Projects\CyroTech\FutronicSDK\Examples\Net\Vs2013\WorkedEx.VB\bin\x64\Debug\WorkedExVbNet13.exe.config
+C:\Projects\CyroTech\FutronicSDK\Examples\Net\Vs2013\WorkedEx.VB\bin\x64\Debug\WorkedExVbNet13.exe
+C:\Projects\CyroTech\FutronicSDK\Examples\Net\Vs2013\WorkedEx.VB\bin\x64\Debug\WorkedExVbNet13.pdb
+C:\Projects\CyroTech\FutronicSDK\Examples\Net\Vs2013\WorkedEx.VB\bin\x64\Debug\ftrSDKHelper13.dll
+C:\Projects\CyroTech\FutronicSDK\Examples\Net\Vs2013\WorkedEx.VB\bin\x64\Debug\ftrSDKHelper13.pdb
+C:\Projects\CyroTech\FutronicSDK\Examples\Net\Vs2013\WorkedEx.VB\bin\x64\Debug\ftrSDKHelper13.xml
+C:\Projects\CyroTech\FutronicSDK\Examples\Net\Vs2013\WorkedEx.VB\obj\x64\Debug\WorkedEx.VB.NET.vbprojAssemblyReference.cache
+C:\Projects\CyroTech\FutronicSDK\Examples\Net\Vs2013\WorkedEx.VB\obj\x64\Debug\Futronic.SDK.WorkedEx.EnrollmentName.resources
+C:\Projects\CyroTech\FutronicSDK\Examples\Net\Vs2013\WorkedEx.VB\obj\x64\Debug\Futronic.SDK.WorkedEx.MainForm.resources
+C:\Projects\CyroTech\FutronicSDK\Examples\Net\Vs2013\WorkedEx.VB\obj\x64\Debug\Resources.resources
+C:\Projects\CyroTech\FutronicSDK\Examples\Net\Vs2013\WorkedEx.VB\obj\x64\Debug\Futronic.SDK.WorkedEx.SelectUser.resources
+C:\Projects\CyroTech\FutronicSDK\Examples\Net\Vs2013\WorkedEx.VB\obj\x64\Debug\WorkedEx.VB.NET.vbproj.GenerateResource.cache
+C:\Projects\CyroTech\FutronicSDK\Examples\Net\Vs2013\WorkedEx.VB\obj\x64\Debug\WorkedEx.VB.NET.vbproj.CoreCompileInputs.cache
+C:\Projects\CyroTech\FutronicSDK\Examples\Net\Vs2013\WorkedEx.VB\obj\x64\Debug\WorkedEx.VB.NET.vbproj.CopyComplete
+C:\Projects\CyroTech\FutronicSDK\Examples\Net\Vs2013\WorkedEx.VB\obj\x64\Debug\WorkedExVbNet13.exe
+C:\Projects\CyroTech\FutronicSDK\Examples\Net\Vs2013\WorkedEx.VB\obj\x64\Debug\WorkedExVbNet13.pdb

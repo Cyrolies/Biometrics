@@ -1,0 +1,245 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "rcInc.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Russian resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+#ifdef _WIN32
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "rcInc.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""winres.h""\r\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Russian resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MAINDIALOG DIALOGEX 0, 0, 175, 319
+STYLE DS_SETFONT | DS_MODALFRAME | WS_CHILD | WS_VISIBLE
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    GROUPBOX        " Operations ",IDC_STATIC,15,10,145,80,BS_CENTER | WS_GROUP
+    DEFPUSHBUTTON   "Capture",ID_CAPTURE,30,25,50,14,WS_GROUP
+    PUSHBUTTON      "Enroll",ID_ENROLL,30,45,50,14
+    PUSHBUTTON      "Verify",ID_VERIFY,95,25,50,14
+    PUSHBUTTON      "Identify",ID_IDENTIFY,95,45,50,14
+    PUSHBUTTON      "Stop",ID_STOPOPERATION,65,65,50,14,WS_DISABLED
+    GROUPBOX        " Settings ",IDC_STATIC,15,95,145,35,BS_CENTER
+    LTEXT           "Capture to:",IDC_STATIC,30,110,40,8,NOT WS_GROUP
+    CONTROL         "... file",IDC_CAPTOFILE,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,100,105,33,10
+    CONTROL         "... screen",IDC_CAPTOSCREEN,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,100,115,45,10
+    GROUPBOX        "",IDC_STATIC,15,125,145,65
+    CONTROL         "Detect fake finger: ",IDC_DETECT_FAKE,"Button",BS_AUTOCHECKBOX | BS_LEFTTEXT | BS_LEFT | WS_GROUP | WS_TABSTOP,26,133,70,10
+    LTEXT           "Set max frames in template:",IDC_STATIC,27,147,88,9,NOT WS_GROUP
+    COMBOBOX        IDC_CMAX_FRAMES,124,146,25,68,CBS_DROPDOWNLIST | CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Disable MIOT:",IDC_DETECT_MIOT,"Button",BS_AUTOCHECKBOX | BS_LEFTTEXT | BS_LEFT | WS_TABSTOP,26,161,121,10
+    LTEXT           "Set measure value:",IDC_STATIC,27,175,88,9,NOT WS_GROUP
+    COMBOBOX        IDC_MEASURE,120,175,29,68,CBS_DROPDOWNLIST | CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Do image processing compatible to",IDC_STATIC,14,192,145,28,BS_CENTER
+    CONTROL         "SDK 3.0",IDC_SDK3_RADIO,"Button",BS_AUTORADIOBUTTON,19,203,43,10
+    CONTROL         "SDK 3.5",IDC_SDK35_RADIO,"Button",BS_AUTORADIOBUTTON,68,203,43,10
+    CONTROL         "Both",IDC_SDKBOTH_RADIO,"Button",BS_AUTORADIOBUTTON,118,203,31,10
+    CTEXT           "Text message:",IDC_STATIC,15,224,145,8,NOT WS_GROUP
+    CTEXT           "",IDC_TEXTMESSAGE,15,234,145,14,NOT WS_GROUP,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE | WS_EX_STATICEDGE
+    CTEXT           "",IDC_PROGRESS_TEXT,15,249,145,8,NOT WS_VISIBLE | NOT WS_GROUP
+    CONTROL         "Progress1",IDC_ENROLL_PROGRESS,"msctls_progress32",NOT WS_VISIBLE | WS_BORDER | 0x1,15,259,145,14,WS_EX_DLGMODALFRAME
+    PUSHBUTTON      "Exit",ID_EXIT,65,282,50,14,WS_GROUP
+    CTEXT           "",IDC_VERINFO,15,302,145,10,NOT WS_GROUP,WS_EX_RIGHT
+    CONTROL         "Fast mode:",IDC_FAST_MODE,"Button",BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_TABSTOP,102,133,46,11
+END
+
+IDD_CAPTOFILE DIALOGEX 0, 0, 200, 85
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_VISIBLE | WS_CAPTION
+CAPTION "Set write file parameters"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "Enter the name:",IDC_STATIC,72,10,69,8
+    LTEXT           "Set number files (1-99):",IDC_STATIC,49,41,80,8
+    EDITTEXT        IDC_FILENUM,135,40,14,12,ES_RIGHT | ES_NUMBER
+    EDITTEXT        IDC_FILEMASK,14,20,172,12,ES_AUTOHSCROLL | WS_GROUP
+    DEFPUSHBUTTON   "OK",IDOK,40,64,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,110,64,50,14
+END
+
+IDD_YOURNAME DIALOGEX 0, 0, 186, 47
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_VISIBLE | WS_CAPTION
+CAPTION "Write to base:"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "My name is",IDC_STATIC,7,9,39,8
+    EDITTEXT        IDC_YOURNAME,50,7,129,12,ES_AUTOHSCROLL | WS_GROUP
+    DEFPUSHBUTTON   "OK",IDOK,33,26,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,103,26,50,14
+END
+
+IDD_VERIFYDIALOG DIALOGEX 0, 0, 250, 151
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Verification procedure:"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LISTBOX         IDC_VERIFYLIST,7,7,236,90,LBS_SORT | LBS_NOINTEGRALHEIGHT | LBS_MULTICOLUMN | WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    LTEXT           "I am",IDC_STATIC,45,110,15,8
+    EDITTEXT        IDC_MYNAME,63,108,140,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,64,130,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,134,130,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_MAINDIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 167
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 312
+    END
+
+    IDD_CAPTOFILE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 193
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 78
+    END
+
+    IDD_YOURNAME, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 40
+    END
+
+    IDD_VERIFYDIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 243
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 144
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_FUTRONIC            ICON                    "Futronic.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_FUTRONIC            BITMAP                  "Futronic.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_MAINDIALOG DLGINIT
+BEGIN
+    IDC_CMAX_FRAMES, 0x403, 2, 0
+0x0031, 
+    IDC_CMAX_FRAMES, 0x403, 2, 0
+0x0032, 
+    IDC_CMAX_FRAMES, 0x403, 2, 0
+0x0033, 
+    IDC_CMAX_FRAMES, 0x403, 2, 0
+0x0034, 
+    IDC_CMAX_FRAMES, 0x403, 2, 0
+0x0035, 
+    IDC_CMAX_FRAMES, 0x403, 2, 0
+0x0036, 
+    IDC_CMAX_FRAMES, 0x403, 2, 0
+0x0037, 
+    IDC_CMAX_FRAMES, 0x403, 2, 0
+0x0038, 
+    IDC_CMAX_FRAMES, 0x403, 2, 0
+0x0039, 
+    IDC_CMAX_FRAMES, 0x403, 3, 0
+0x3031, "\000" 
+    IDC_MEASURE, 0x403, 4, 0
+0x3231, 0x0033, 
+    IDC_MEASURE, 0x403, 4, 0
+0x3534, 0x0036, 
+    IDC_MEASURE, 0x403, 4, 0
+0x3837, 0x0039, 
+    0
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

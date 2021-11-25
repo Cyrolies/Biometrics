@@ -1,0 +1,15 @@
+C:\Projects\CyroTech\Biometrics\CyroTechBiometric\App\Net\ScannerApp\Service\bin\Debug\Service.dll
+C:\Projects\CyroTech\Biometrics\CyroTechBiometric\App\Net\ScannerApp\Service\bin\Debug\Service.pdb
+C:\Projects\CyroTech\Biometrics\CyroTechBiometric\App\Net\ScannerApp\Service\bin\Debug\DALEFModel.dll
+C:\Projects\CyroTech\Biometrics\CyroTechBiometric\App\Net\ScannerApp\Service\bin\Debug\Newtonsoft.Json.dll
+C:\Projects\CyroTech\Biometrics\CyroTechBiometric\App\Net\ScannerApp\Service\bin\Debug\DALEFModel.pdb
+C:\Projects\CyroTech\Biometrics\CyroTechBiometric\App\Net\ScannerApp\Service\bin\Debug\DALEFModel.dll.config
+C:\Projects\CyroTech\Biometrics\CyroTechBiometric\App\Net\ScannerApp\Service\bin\Debug\Newtonsoft.Json.xml
+C:\Projects\CyroTech\Biometrics\CyroTechBiometric\App\Net\ScannerApp\Service\obj\Debug\Service.csproj.CoreCompileInputs.cache
+C:\Projects\CyroTech\Biometrics\CyroTechBiometric\App\Net\ScannerApp\Service\obj\Debug\Service.csproj.CopyComplete
+C:\Projects\CyroTech\Biometrics\CyroTechBiometric\App\Net\ScannerApp\Service\obj\Debug\Service.dll
+C:\Projects\CyroTech\Biometrics\CyroTechBiometric\App\Net\ScannerApp\Service\obj\Debug\Service.pdb
+C:\Projects\CyroTech\Biometrics\CyroTechBiometric\App\Net\ScannerApp\Service\obj\Debug\Service.csprojAssemblyReference.cache
+C:\Projects\CyroTech\Biometrics\CyroTechBiometric\App\Net\ScannerApp\Service\bin\Debug\ftrSDKHelper13.dll
+C:\Projects\CyroTech\Biometrics\CyroTechBiometric\App\Net\ScannerApp\Service\bin\Debug\ftrSDKHelper13.pdb
+C:\Projects\CyroTech\Biometrics\CyroTechBiometric\App\Net\ScannerApp\Service\bin\Debug\ftrSDKHelper13.xml

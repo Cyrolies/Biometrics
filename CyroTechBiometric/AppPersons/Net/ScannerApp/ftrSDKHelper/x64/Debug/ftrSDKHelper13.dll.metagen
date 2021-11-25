@@ -1,0 +1,225 @@
+ImageRuntimeVersion: v4.0.30319
+Assembly ftrSDKHelper13, Version=4.2.*, Culture=Invariant Language (Invariant Country): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=None, flags=None
+Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Class Futronic.SDKHelper.FutronicException: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Exception
+    Void .ctor(Int32, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Int32 ErrorCode 'get ' : 
+  Methods:
+    get_ErrorCode(): PrivateScope, Public, HideBySig, SpecialName
+Struct Futronic.SDKHelper.FTR_PROGRESS: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    UInt32 dwSize IsLong : Public
+    UInt32 dwCount : Public
+    Int32 bIsRepeated : Public
+    UInt32 dwTotal : Public
+Struct Futronic.SDKHelper.FtrIdentifyRecord: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Byte[] KeyValue : Public
+    Byte[] Template : Public
+Class Futronic.SDKHelper.OnPutOnHandler: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(FTR_PROGRESS): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(FTR_PROGRESS, AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class Futronic.SDKHelper.OnTakeOffHandler: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(FTR_PROGRESS): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(FTR_PROGRESS, AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class Futronic.SDKHelper.UpdateScreenImageHandler: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Bitmap): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(Bitmap, AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class Futronic.SDKHelper.OnFakeSourceHandler: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(FTR_PROGRESS): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(FTR_PROGRESS, AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class Futronic.SDKHelper.FutronicSdkBase: AutoLayout, AnsiClass, Class, Public, Abstract, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Fields:
+    Int32 RETCODE_OK IsConst : Public, Static, HasDefault
+    Int32 RETCODE_NO_MEMORY IsConst : Public, Static, HasDefault
+    Int32 RETCODE_INVALID_ARG IsConst : Public, Static, HasDefault
+    Int32 RETCODE_ALREADY_IN_USE IsConst : Public, Static, HasDefault
+    Int32 RETCODE_INVALID_PURPOSE IsConst : Public, Static, HasDefault
+    Int32 RETCODE_INTERNAL_ERROR IsConst : Public, Static, HasDefault
+    Int32 RETCODE_UNABLE_TO_CAPTURE IsConst : Public, Static, HasDefault
+    Int32 RETCODE_CANCELED_BY_USER IsConst : Public, Static, HasDefault
+    Int32 RETCODE_NO_MORE_RETRIES IsConst : Public, Static, HasDefault
+    Int32 RETCODE_INCONSISTENT_SAMPLING IsConst : Public, Static, HasDefault
+    Int32 RETCODE_FRAME_SOURCE_NOT_SET IsConst : Public, Static, HasDefault
+    Int32 RETCODE_DEVICE_NOT_CONNECTED IsConst : Public, Static, HasDefault
+    Int32 RETCODE_DEVICE_FAILURE IsConst : Public, Static, HasDefault
+    Int32 RETCODE_EMPTY_FRAME IsConst : Public, Static, HasDefault
+    Int32 RETCODE_FAKE_SOURCE IsConst : Public, Static, HasDefault
+    Int32 RETCODE_INCOMPATIBLE_HARDWARE IsConst : Public, Static, HasDefault
+    Int32 RETCODE_INCOMPATIBLE_FIRMWARE IsConst : Public, Static, HasDefault
+    Int32 RETCODE_TRIAL_EXPIRED IsConst : Public, Static, HasDefault
+    Int32 RETCODE_FRAME_SOURCE_CHANGED IsConst : Public, Static, HasDefault
+    Int32 RETCODE_INCOMPATIBLE_SOFTWARE IsConst : Public, Static, HasDefault
+    Int32[] rgFARN : Public, Static
+    System.Object m_SyncRoot : Public, Static
+  Properties:
+    Boolean FastMode 'get set' : 
+    Int32 IdentificationsLeft 'get ' : 
+    Boolean IsTrial 'get ' : 
+    Int32 FARN 'get set' : 
+    Futronic.SDKHelper.FarnValues FARnLevel 'get set' : 
+    Boolean FFDControl 'get set' : 
+    Futronic.SDKHelper.VersionCompatible Version 'get set' : 
+    Boolean FakeDetection 'get set' : 
+  Events:
+    Futronic.SDKHelper.OnFakeSourceHandler OnFakeSource: SpecialName
+    Futronic.SDKHelper.UpdateScreenImageHandler UpdateScreenImage: SpecialName
+    Futronic.SDKHelper.OnTakeOffHandler OnTakeOff: SpecialName
+    Futronic.SDKHelper.OnPutOnHandler OnPutOn: SpecialName
+  Methods:
+    SdkRetCode2Message(Int32): PrivateScope, Public, Static, HideBySig
+    add_OnPutOn(OnPutOnHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_OnPutOn(OnPutOnHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_OnTakeOff(OnTakeOffHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_OnTakeOff(OnTakeOffHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_UpdateScreenImage(UpdateScreenImageHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_UpdateScreenImage(UpdateScreenImageHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_OnFakeSource(OnFakeSourceHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_OnFakeSource(OnFakeSourceHandler): PrivateScope, Public, HideBySig, SpecialName
+    OnCalcel(): PrivateScope, Public, HideBySig
+    get_FakeDetection(): PrivateScope, Public, HideBySig, SpecialName
+    set_FakeDetection(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+    get_Version(): PrivateScope, Public, HideBySig, SpecialName
+    set_Version(VersionCompatible): PrivateScope, Public, HideBySig, SpecialName
+    get_FFDControl(): PrivateScope, Public, HideBySig, SpecialName
+    set_FFDControl(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+    get_FARnLevel(): PrivateScope, Public, HideBySig, SpecialName
+    set_FARnLevel(FarnValues): PrivateScope, Public, HideBySig, SpecialName
+    get_FARN(): PrivateScope, Public, HideBySig, SpecialName
+    set_FARN(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_IsTrial(): PrivateScope, Public, HideBySig, SpecialName
+    get_IdentificationsLeft(): PrivateScope, Public, HideBySig, SpecialName
+    get_FastMode(): PrivateScope, Public, HideBySig, SpecialName
+    set_FastMode(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+    cbControl(FTR_PROGRESS, UInt32, UInt32, UInt32, UInt32, IntPtr): PrivateScope, Public, HideBySig
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig
+Struct Futronic.SDKHelper.FarnValues: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Futronic.SDKHelper.FarnValues farn_low = 0 : Public, Static, Literal, HasDefault
+    Futronic.SDKHelper.FarnValues farn_below_normal = 1 : Public, Static, Literal, HasDefault
+    Futronic.SDKHelper.FarnValues farn_normal = 2 : Public, Static, Literal, HasDefault
+    Futronic.SDKHelper.FarnValues farn_above_normal = 3 : Public, Static, Literal, HasDefault
+    Futronic.SDKHelper.FarnValues farn_high = 4 : Public, Static, Literal, HasDefault
+    Futronic.SDKHelper.FarnValues farn_max = 5 : Public, Static, Literal, HasDefault
+    Futronic.SDKHelper.FarnValues farn_custom = 255 : Public, Static, Literal, HasDefault
+Struct Futronic.SDKHelper.EnrollmentState: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Futronic.SDKHelper.EnrollmentState ready_to_process = 0 : Public, Static, Literal, HasDefault
+    Futronic.SDKHelper.EnrollmentState process_in_progress = 1 : Public, Static, Literal, HasDefault
+    Futronic.SDKHelper.EnrollmentState ready_to_continue = 2 : Public, Static, Literal, HasDefault
+    Futronic.SDKHelper.EnrollmentState continue_in_progress = 3 : Public, Static, Literal, HasDefault
+Struct Futronic.SDKHelper.VersionCompatible: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Futronic.SDKHelper.VersionCompatible ftr_version_previous = 1 : Public, Static, Literal, HasDefault
+    Futronic.SDKHelper.VersionCompatible ftr_version_current = 3 : Public, Static, Literal, HasDefault
+    Futronic.SDKHelper.VersionCompatible ftr_version_compatible = 2 : Public, Static, Literal, HasDefault
+Class Futronic.SDKHelper.OnEnrollmentCompleteHandler: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Boolean(HasFieldMarshal), Int32): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(Boolean(HasFieldMarshal), Int32, AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class Futronic.SDKHelper.FutronicEnrollment: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :Futronic.SDKHelper.FutronicSdkBase
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    UInt32 Quality 'get ' : 
+    Byte[] Template 'get ' : 
+    Int32 MaxModels 'get set' : 
+    Boolean MIOTControlOff 'get set' : 
+  Events:
+    Futronic.SDKHelper.OnEnrollmentCompleteHandler OnEnrollmentComplete: SpecialName
+  Methods:
+    add_OnEnrollmentComplete(OnEnrollmentCompleteHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_OnEnrollmentComplete(OnEnrollmentCompleteHandler): PrivateScope, Public, HideBySig, SpecialName
+    Enrollment(): PrivateScope, Public, HideBySig
+    get_MIOTControlOff(): PrivateScope, Public, HideBySig, SpecialName
+    set_MIOTControlOff(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+    get_MaxModels(): PrivateScope, Public, HideBySig, SpecialName
+    set_MaxModels(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_Template(): PrivateScope, Public, HideBySig, SpecialName
+    get_Quality(): PrivateScope, Public, HideBySig, SpecialName
+Class Futronic.SDKHelper.OnGetBaseTemplateCompleteHandler: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Boolean(HasFieldMarshal), Int32): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(Boolean(HasFieldMarshal), Int32, AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class Futronic.SDKHelper.FutronicIdentification: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :Futronic.SDKHelper.FutronicSdkBase
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Byte[] BaseTemplate 'get set' : 
+  Events:
+    Futronic.SDKHelper.OnGetBaseTemplateCompleteHandler OnGetBaseTemplateComplete: SpecialName
+  Methods:
+    add_OnGetBaseTemplateComplete(OnGetBaseTemplateCompleteHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_OnGetBaseTemplateComplete(OnGetBaseTemplateCompleteHandler): PrivateScope, Public, HideBySig, SpecialName
+    GetBaseTemplate(): PrivateScope, Public, HideBySig
+    Identification(FtrIdentifyRecord[], Int32&): PrivateScope, Public, HideBySig
+    Identification(FtrIdentifyRecord, Boolean&): PrivateScope, Public, HideBySig
+    get_BaseTemplate(): PrivateScope, Public, HideBySig, SpecialName
+    set_BaseTemplate(Byte[]): PrivateScope, Public, HideBySig, SpecialName
+Class Futronic.SDKHelper.OnVerificationCompleteHandler: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Boolean(HasFieldMarshal), Int32, Boolean(HasFieldMarshal)): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(Boolean(HasFieldMarshal), Int32, Boolean(HasFieldMarshal), AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class Futronic.SDKHelper.FutronicVerification: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :Futronic.SDKHelper.FutronicSdkBase
+    Void .ctor(Byte[]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Int32 FARNValue 'get ' : 
+    Boolean Result 'get ' : 
+  Events:
+    Futronic.SDKHelper.OnVerificationCompleteHandler OnVerificationComplete: SpecialName
+  Methods:
+    add_OnVerificationComplete(OnVerificationCompleteHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_OnVerificationComplete(OnVerificationCompleteHandler): PrivateScope, Public, HideBySig, SpecialName
+    Verification(): PrivateScope, Public, HideBySig
+    get_Result(): PrivateScope, Public, HideBySig, SpecialName
+    get_FARNValue(): PrivateScope, Public, HideBySig, SpecialName

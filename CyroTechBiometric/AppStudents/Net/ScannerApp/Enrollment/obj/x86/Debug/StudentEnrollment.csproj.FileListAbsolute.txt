@@ -1,0 +1,6 @@
+C:\Projects\CyroTech\Biometrics\CyroTechBiometric\AppStudents\Net\ScannerApp\Enrollment\obj\x86\Debug\StudentEnrollment.csprojAssemblyReference.cache
+C:\Projects\CyroTech\Biometrics\CyroTechBiometric\AppStudents\Net\ScannerApp\Enrollment\obj\x86\Debug\StudentEnrollment.StudentEnrollmentForm.resources
+C:\Projects\CyroTech\Biometrics\CyroTechBiometric\AppStudents\Net\ScannerApp\Enrollment\obj\x86\Debug\StudentEnrollment.Properties.Resources.resources
+C:\Projects\CyroTech\Biometrics\CyroTechBiometric\AppStudents\Net\ScannerApp\Enrollment\obj\x86\Debug\StudentEnrollment.SelectMealPreferences.resources
+C:\Projects\CyroTech\Biometrics\CyroTechBiometric\AppStudents\Net\ScannerApp\Enrollment\obj\x86\Debug\StudentEnrollment.csproj.GenerateResource.cache
+C:\Projects\CyroTech\Biometrics\CyroTechBiometric\AppStudents\Net\ScannerApp\Enrollment\obj\x86\Debug\StudentEnrollment.csproj.CoreCompileInputs.cache

@@ -1,0 +1,5 @@
+C:\Projects\CyroTech\Biometrics\FaceRecProOV_Src\obj\x86\Debug\MultiFaceRec.csprojAssemblyReference.cache
+C:\Projects\CyroTech\Biometrics\FaceRecProOV_Src\obj\x86\Debug\MultiFaceRec.FrmPrincipal.resources
+C:\Projects\CyroTech\Biometrics\FaceRecProOV_Src\obj\x86\Debug\MultiFaceRec.Properties.Resources.resources
+C:\Projects\CyroTech\Biometrics\FaceRecProOV_Src\obj\x86\Debug\MultiFaceRec.csproj.GenerateResource.cache
+C:\Projects\CyroTech\Biometrics\FaceRecProOV_Src\obj\x86\Debug\MultiFaceRec.csproj.CoreCompileInputs.cache

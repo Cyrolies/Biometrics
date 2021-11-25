@@ -1,0 +1,38 @@
+﻿  Stdafx.cpp
+C:\Projects\CyroTech\Biometrics\CyroTechBiometric\App\Net\ScannerApp\ftrSDKHelper\Stdafx.cpp(47,85): warning C4312: 'reinterpret_cast': conversion from 'DWORD' to 'void *' of greater size
+C:\Projects\CyroTech\Biometrics\CyroTechBiometric\App\Net\ScannerApp\ftrSDKHelper\Stdafx.cpp(62,88): warning C4312: 'reinterpret_cast': conversion from 'DWORD' to 'void *' of greater size
+C:\Projects\CyroTech\Biometrics\CyroTechBiometric\App\Net\ScannerApp\ftrSDKHelper\Stdafx.cpp(70,82): warning C4312: 'reinterpret_cast': conversion from 'BOOL' to 'void *' of greater size
+C:\Projects\CyroTech\Biometrics\CyroTechBiometric\App\Net\ScannerApp\ftrSDKHelper\Stdafx.cpp(78,82): warning C4312: 'reinterpret_cast': conversion from 'BOOL' to 'void *' of greater size
+C:\Projects\CyroTech\Biometrics\CyroTechBiometric\App\Net\ScannerApp\ftrSDKHelper\Stdafx.cpp(86,83): warning C4312: 'reinterpret_cast': conversion from 'BOOL' to 'void *' of greater size
+C:\Projects\CyroTech\Biometrics\CyroTechBiometric\App\Net\ScannerApp\ftrSDKHelper\Stdafx.cpp(94,80): warning C4312: 'reinterpret_cast': conversion from 'DWORD' to 'void *' of greater size
+C:\Projects\CyroTech\Biometrics\CyroTechBiometric\App\Net\ScannerApp\ftrSDKHelper\Stdafx.cpp(102,85): warning C4312: 'reinterpret_cast': conversion from 'FTR_VERSION' to 'FTR_PARAM_VALUE' of greater size
+C:\Projects\CyroTech\Biometrics\CyroTechBiometric\App\Net\ScannerApp\ftrSDKHelper\Stdafx.cpp(110,80): warning C4312: 'reinterpret_cast': conversion from 'BOOL' to 'void *' of greater size
+C:\Projects\CyroTech\Biometrics\CyroTechBiometric\App\Net\ScannerApp\ftrSDKHelper\Stdafx.cpp(160,85): warning C4312: 'reinterpret_cast': conversion from 'DWORD' to 'void *' of greater size
+C:\Projects\CyroTech\Biometrics\CyroTechBiometric\App\Net\ScannerApp\ftrSDKHelper\Stdafx.cpp(175,88): warning C4312: 'reinterpret_cast': conversion from 'DWORD' to 'void *' of greater size
+C:\Projects\CyroTech\Biometrics\CyroTechBiometric\App\Net\ScannerApp\ftrSDKHelper\Stdafx.cpp(183,82): warning C4312: 'reinterpret_cast': conversion from 'BOOL' to 'void *' of greater size
+C:\Projects\CyroTech\Biometrics\CyroTechBiometric\App\Net\ScannerApp\ftrSDKHelper\Stdafx.cpp(191,82): warning C4312: 'reinterpret_cast': conversion from 'BOOL' to 'void *' of greater size
+C:\Projects\CyroTech\Biometrics\CyroTechBiometric\App\Net\ScannerApp\ftrSDKHelper\Stdafx.cpp(199,85): warning C4312: 'reinterpret_cast': conversion from 'FTR_VERSION' to 'FTR_PARAM_VALUE' of greater size
+C:\Projects\CyroTech\Biometrics\CyroTechBiometric\App\Net\ScannerApp\ftrSDKHelper\Stdafx.cpp(207,80): warning C4312: 'reinterpret_cast': conversion from 'BOOL' to 'void *' of greater size
+C:\Projects\CyroTech\Biometrics\CyroTechBiometric\App\Net\ScannerApp\ftrSDKHelper\Stdafx.cpp(239,85): warning C4312: 'reinterpret_cast': conversion from 'DWORD' to 'void *' of greater size
+C:\Projects\CyroTech\Biometrics\CyroTechBiometric\App\Net\ScannerApp\ftrSDKHelper\Stdafx.cpp(254,88): warning C4312: 'reinterpret_cast': conversion from 'DWORD' to 'void *' of greater size
+C:\Projects\CyroTech\Biometrics\CyroTechBiometric\App\Net\ScannerApp\ftrSDKHelper\Stdafx.cpp(262,82): warning C4312: 'reinterpret_cast': conversion from 'BOOL' to 'void *' of greater size
+C:\Projects\CyroTech\Biometrics\CyroTechBiometric\App\Net\ScannerApp\ftrSDKHelper\Stdafx.cpp(270,82): warning C4312: 'reinterpret_cast': conversion from 'BOOL' to 'void *' of greater size
+C:\Projects\CyroTech\Biometrics\CyroTechBiometric\App\Net\ScannerApp\ftrSDKHelper\Stdafx.cpp(278,83): warning C4312: 'reinterpret_cast': conversion from 'BOOL' to 'void *' of greater size
+C:\Projects\CyroTech\Biometrics\CyroTechBiometric\App\Net\ScannerApp\ftrSDKHelper\Stdafx.cpp(286,85): warning C4312: 'reinterpret_cast': conversion from 'FTR_VERSION' to 'FTR_PARAM_VALUE' of greater size
+C:\Projects\CyroTech\Biometrics\CyroTechBiometric\App\Net\ScannerApp\ftrSDKHelper\Stdafx.cpp(294,80): warning C4312: 'reinterpret_cast': conversion from 'BOOL' to 'void *' of greater size
+C:\Projects\CyroTech\Biometrics\CyroTechBiometric\App\Net\ScannerApp\ftrSDKHelper\Stdafx.cpp(342,85): warning C4312: 'reinterpret_cast': conversion from 'DWORD' to 'void *' of greater size
+C:\Projects\CyroTech\Biometrics\CyroTechBiometric\App\Net\ScannerApp\ftrSDKHelper\Stdafx.cpp(350,88): warning C4312: 'reinterpret_cast': conversion from 'DWORD' to 'void *' of greater size
+C:\Projects\CyroTech\Biometrics\CyroTechBiometric\App\Net\ScannerApp\ftrSDKHelper\Stdafx.cpp(358,82): warning C4312: 'reinterpret_cast': conversion from 'BOOL' to 'void *' of greater size
+C:\Projects\CyroTech\Biometrics\CyroTechBiometric\App\Net\ScannerApp\ftrSDKHelper\Stdafx.cpp(366,82): warning C4312: 'reinterpret_cast': conversion from 'BOOL' to 'void *' of greater size
+C:\Projects\CyroTech\Biometrics\CyroTechBiometric\App\Net\ScannerApp\ftrSDKHelper\Stdafx.cpp(374,85): warning C4312: 'reinterpret_cast': conversion from 'FTR_VERSION' to 'FTR_PARAM_VALUE' of greater size
+C:\Projects\CyroTech\Biometrics\CyroTechBiometric\App\Net\ScannerApp\ftrSDKHelper\Stdafx.cpp(382,80): warning C4312: 'reinterpret_cast': conversion from 'BOOL' to 'void *' of greater size
+  AssemblyInfo.cpp
+  ftrException.cpp
+  ftrSDKHelper.cpp
+  FutronicEnrollment.cpp
+  FutronicIdentification.cpp
+  FutronicVerification.cpp
+  Generating Code...
+  .NETFramework,Version=v4.0.AssemblyAttributes.cpp
+  AssemblyInfo.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
+  ftrSDKHelper.vcxproj -> C:\Projects\CyroTech\Biometrics\CyroTechBiometric\App\Net\ScannerApp\ftrSDKHelper\x64\Debug\ftrSDKHelper13.dll

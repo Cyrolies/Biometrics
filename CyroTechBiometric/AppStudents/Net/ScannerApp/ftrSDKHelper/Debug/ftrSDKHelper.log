@@ -1,0 +1,2 @@
+﻿  Stdafx.cpp
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\windows.h(167,10): fatal error C1083: Cannot open include file: 'excpt.h': No such file or directory

@@ -1,0 +1,14 @@
+C:\Projects\CyroTech\Biometrics\CyroTechBiometric\AppStudents\Net\ScannerApp\Service\bin\Release\Service.dll
+C:\Projects\CyroTech\Biometrics\CyroTechBiometric\AppStudents\Net\ScannerApp\Service\bin\Release\Service.pdb
+C:\Projects\CyroTech\Biometrics\CyroTechBiometric\AppStudents\Net\ScannerApp\Service\bin\Release\DALEFModel.dll
+C:\Projects\CyroTech\Biometrics\CyroTechBiometric\AppStudents\Net\ScannerApp\Service\bin\Release\ftrSDKHelper13.dll
+C:\Projects\CyroTech\Biometrics\CyroTechBiometric\AppStudents\Net\ScannerApp\Service\bin\Release\Newtonsoft.Json.dll
+C:\Projects\CyroTech\Biometrics\CyroTechBiometric\AppStudents\Net\ScannerApp\Service\bin\Release\ftrSDKHelper13.pdb
+C:\Projects\CyroTech\Biometrics\CyroTechBiometric\AppStudents\Net\ScannerApp\Service\bin\Release\DALEFModel.pdb
+C:\Projects\CyroTech\Biometrics\CyroTechBiometric\AppStudents\Net\ScannerApp\Service\bin\Release\DALEFModel.dll.config
+C:\Projects\CyroTech\Biometrics\CyroTechBiometric\AppStudents\Net\ScannerApp\Service\bin\Release\Newtonsoft.Json.xml
+C:\Projects\CyroTech\Biometrics\CyroTechBiometric\AppStudents\Net\ScannerApp\Service\obj\Release\Service.csprojAssemblyReference.cache
+C:\Projects\CyroTech\Biometrics\CyroTechBiometric\AppStudents\Net\ScannerApp\Service\obj\Release\Service.csproj.CoreCompileInputs.cache
+C:\Projects\CyroTech\Biometrics\CyroTechBiometric\AppStudents\Net\ScannerApp\Service\obj\Release\Service.csproj.CopyComplete
+C:\Projects\CyroTech\Biometrics\CyroTechBiometric\AppStudents\Net\ScannerApp\Service\obj\Release\Service.dll
+C:\Projects\CyroTech\Biometrics\CyroTechBiometric\AppStudents\Net\ScannerApp\Service\obj\Release\Service.pdb

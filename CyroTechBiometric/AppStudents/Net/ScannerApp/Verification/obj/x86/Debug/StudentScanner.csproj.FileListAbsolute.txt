@@ -1,0 +1,4 @@
+C:\Projects\CyroTech\Biometrics\CyroTechBiometric\AppStudents\Net\ScannerApp\Verification\obj\x86\Debug\StudentScanner.StudentScanningForm.resources
+C:\Projects\CyroTech\Biometrics\CyroTechBiometric\AppStudents\Net\ScannerApp\Verification\obj\x86\Debug\StudentScanner.Properties.Resources.resources
+C:\Projects\CyroTech\Biometrics\CyroTechBiometric\AppStudents\Net\ScannerApp\Verification\obj\x86\Debug\StudentScanner.csproj.GenerateResource.cache
+C:\Projects\CyroTech\Biometrics\CyroTechBiometric\AppStudents\Net\ScannerApp\Verification\obj\x86\Debug\StudentScanner.csproj.CoreCompileInputs.cache

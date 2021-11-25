@@ -1,0 +1,7 @@
+C:\Projects\CyroTech\FutronicSDK\Examples\Net\Vs2013\ftrSDKHelper\x64\Debug\ftrSDKHelper13.dll
+C:\Projects\CyroTech\FutronicSDK\Examples\Net\Vs2013\ftrSDKHelper\x64\Debug\ftrSDKHelper13.pdb
+C:\Projects\CyroTech\Biometrics\CyroTechBiometric\App\Net\ScannerApp\ftrSDKHelper\x64\Debug\ftrSDKHelper13.dll
+C:\Projects\CyroTech\Biometrics\CyroTechBiometric\App\Net\ScannerApp\ftrSDKHelper\x64\Debug\ftrSDKHelper13.pdb
+C:\Projects\CyroTech\Biometrics\CyroTechBiometric\App\Net\ScannerApp\ftrSDKHelper\x64\Debug\ftrSDKHelper.vcxprojAssemblyReference.cache
+C:\Projects\CyroTech\Biometrics\CyroTechBiometric\AppStudents\Net\ScannerApp\ftrSDKHelper\x64\Debug\ftrSDKHelper13.dll
+C:\Projects\CyroTech\Biometrics\CyroTechBiometric\AppStudents\Net\ScannerApp\ftrSDKHelper\x64\Debug\ftrSDKHelper13.pdb
