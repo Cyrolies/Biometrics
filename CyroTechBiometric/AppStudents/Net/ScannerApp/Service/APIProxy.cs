@@ -225,6 +225,7 @@ namespace Service
 
 		public List<StudentBiometric> GetStudentBiometricList(int orgID, int biometricType, out string result)
 		{
+			try { 
 			string uri = BaseUri + "StudentBiometricController/GetStudentBiometricList";
 			using (HttpClient httpClient = new HttpClient())
 			{
@@ -249,6 +250,11 @@ namespace Service
 					return null;
 				}
 
+			}
+			}
+			catch (AggregateException ex)
+			{
+				throw ex;
 			}
 		}
 

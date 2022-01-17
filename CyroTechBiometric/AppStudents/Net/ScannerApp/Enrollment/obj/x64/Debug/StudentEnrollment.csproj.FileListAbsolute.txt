@@ -20,3 +20,8 @@ C:\Projects\CyroTech\Biometrics\CyroTechBiometric\AppStudents\Net\ScannerApp\Enr
 C:\Projects\CyroTech\Biometrics\CyroTechBiometric\AppStudents\Net\ScannerApp\Enrollment\obj\x64\Debug\StudentEnrollment.csproj.CopyComplete
 C:\Projects\CyroTech\Biometrics\CyroTechBiometric\AppStudents\Net\ScannerApp\Enrollment\obj\x64\Debug\StudentEnrollment.exe
 C:\Projects\CyroTech\Biometrics\CyroTechBiometric\AppStudents\Net\ScannerApp\Enrollment\obj\x64\Debug\StudentEnrollment.pdb
+C:\Projects\CyroTech\Biometrics\CyroTechBiometric\AppStudents\Net\ScannerApp\Enrollment\bin\x64\Debug\StudentEnrollment.exe.manifest
+C:\Projects\CyroTech\Biometrics\CyroTechBiometric\AppStudents\Net\ScannerApp\Enrollment\bin\x64\Debug\StudentEnrollment.application
+C:\Projects\CyroTech\Biometrics\CyroTechBiometric\AppStudents\Net\ScannerApp\Enrollment\obj\x64\Debug\StudentEnrollment.TrustInfo.xml
+C:\Projects\CyroTech\Biometrics\CyroTechBiometric\AppStudents\Net\ScannerApp\Enrollment\obj\x64\Debug\StudentEnrollment.exe.manifest
+C:\Projects\CyroTech\Biometrics\CyroTechBiometric\AppStudents\Net\ScannerApp\Enrollment\obj\x64\Debug\StudentEnrollment.application

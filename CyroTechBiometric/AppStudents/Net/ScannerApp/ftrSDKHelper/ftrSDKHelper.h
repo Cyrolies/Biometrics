@@ -237,7 +237,7 @@ namespace SDKHelper {
                 break;
 
             case FTR_RETCODE_DEVICE_NOT_CONNECTED:
-                szMessage = gcnew String( "The scanning device is not connected." );
+                szMessage = gcnew String( "The fingerprint scanning device is not connected.Please connect it to the USB port and reopen application" );
                 break;
 
             case FTR_RETCODE_DEVICE_FAILURE:

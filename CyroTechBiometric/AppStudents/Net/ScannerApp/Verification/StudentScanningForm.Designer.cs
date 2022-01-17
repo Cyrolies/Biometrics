@@ -323,7 +323,7 @@ namespace StudentScanner
 			this.timer.Interval = 1000;
 			this.timer.Tick += new System.EventHandler(this.timer1_Tick);
 			// 
-			// ScanningForm
+			// StudentScanningForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -335,7 +335,7 @@ namespace StudentScanner
 			this.DoubleBuffered = true;
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
 			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-			this.Name = "ScanningForm";
+			this.Name = "StudentScanningForm";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "DSG Student Scanner";
 			this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

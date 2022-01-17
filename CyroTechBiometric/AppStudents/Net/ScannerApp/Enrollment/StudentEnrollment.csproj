@@ -11,15 +11,16 @@
     <RootNamespace>StudentEnrollment</RootNamespace>
     <AssemblyName>StudentEnrollment</AssemblyName>
     <TargetZone>LocalIntranet</TargetZone>
-    <GenerateManifests>false</GenerateManifests>
-    <ApplicationIcon>Futronic.ico</ApplicationIcon>
+    <GenerateManifests>true</GenerateManifests>
+    <ApplicationIcon>Resources\DSG-Logo-Regular-Alt.ico</ApplicationIcon>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
     <OldToolsVersion>2.0</OldToolsVersion>
     <UpgradeBackupLocation />
     <TargetFrameworkProfile />
-    <PublishUrl>publish\</PublishUrl>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Projects\CyroTech\Biometrics\CyroTechBiometric\StudentEnrollmentPublish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
     <UpdateEnabled>false</UpdateEnabled>
@@ -29,10 +30,14 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>0</ApplicationRevision>
+    <ProductName>DSG Scanner Enrollment</ProductName>
+    <PublisherName>CyroTech</PublisherName>
+    <DisallowUrlActivation>true</DisallowUrlActivation>
+    <ApplicationRevision>4</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
@@ -73,6 +78,15 @@
     <PlatformTarget>x64</PlatformTarget>
     <ErrorReport>prompt</ErrorReport>
     <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>159EFAD3B8E24C9608D42A2ABDFC370823F92610</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>StudentEnrollment_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="DALEFModel">
@@ -134,12 +148,12 @@
     <Compile Include="SelectMealPreferences.Designer.cs">
       <DependentUpon>SelectMealPreferences.cs</DependentUpon>
     </Compile>
+    <None Include="StudentEnrollment_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Futronic.bmp" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Futronic.ico" />
     <BaseApplicationManifest Include="Properties\app.manifest" />
   </ItemGroup>
   <ItemGroup>
@@ -168,6 +182,10 @@
       <ProductName>Windows Installer 3.1</ProductName>
       <Install>true</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\DSG-Logo-Regular-Alt.ico" />
+    <None Include="Resources\DSG-Logo-Regular-Alt.png" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -82,23 +82,12 @@ namespace StudentEnrollment
 
         public StudentEnrollmentForm()
         {
-            InitializeComponent();
             try
             {
+                InitializeComponent();
+           
                 m_DatabaseDir = GetDatabaseDir();
-            }
-            catch (UnauthorizedAccessException)
-            {
-                MessageBox.Show(this, "Initialization failed. Application will be close.\nCan not create database folder. Access denied.",
-                    this.Text, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                return;
-            }
-            catch (IOException)
-            {
-                MessageBox.Show(this, "Initialization failed. Application will be close.\nCan not create database folder",
-                    this.Text, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                return;
-            }
+           
 
             LoadStudentBiometricList();
             m_bInitializationSuccess = false;
@@ -135,6 +124,24 @@ namespace StudentEnrollment
 
             
             m_bInitializationSuccess = true;
+            }
+            catch (UnauthorizedAccessException)
+            {
+                MessageBox.Show(this, "Initialization failed. Application will be close.\nCan not create database folder. Access denied.",
+                    this.Text, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return;
+            }
+            catch (IOException)
+            {
+                MessageBox.Show(this, "Initialization failed. Application will be close.\nCan not create database folder",
+                    this.Text, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(this, "Initialization failed",
+                    ex.Message, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
         }
 
         private void SetIdentificationLimit(int nLimit)

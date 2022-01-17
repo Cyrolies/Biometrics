@@ -77,23 +77,12 @@ namespace StudentScanner
 
         public StudentScanningForm()
         {
-            InitializeComponent();
             try
             {
+                InitializeComponent();
+            
                 m_DatabaseDir = GetDatabaseDir();
-            }
-            catch (UnauthorizedAccessException)
-            {
-                MessageBox.Show(this, "Initialization failed. Application will be close.\nCan not create database folder. Access denied.",
-                    this.Text, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                return;
-            }
-            catch (IOException)
-            {
-                MessageBox.Show(this, "Initialization failed. Application will be close.\nCan not create database folder",
-                    this.Text, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                return;
-            }
+            
 
             LoadBiometricList();
             m_bInitializationSuccess = false;
@@ -120,6 +109,24 @@ namespace StudentScanner
 			
             m_bInitializationSuccess = true;
             InitializerScanner();
+            }
+            catch (UnauthorizedAccessException)
+            {
+                MessageBox.Show(this, "Initialization failed. Application will be close.\nCan not create database folder. Access denied.",
+                    this.Text, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return;
+            }
+            catch (IOException)
+            {
+                MessageBox.Show(this, "Initialization failed. Application will be close.\nCan not create database folder",
+                    this.Text, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return;
+            }
+            catch(Exception ex)
+			{
+                MessageBox.Show(this,"Initialization failed",
+                    ex.Message, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
         }
 
         private void SetIdentificationLimit(int nLimit)
@@ -324,11 +331,12 @@ namespace StudentScanner
                 nResult = ((FutronicIdentification)m_Operation).Identification(rgRecords, ref iRecords);
                 if (nResult == FutronicSdkBase.RETCODE_OK)
                 {
-                    
+                    DateTime SATime = TimeZoneInfo.ConvertTime(DateTime.Now,
+                    TimeZoneInfo.FindSystemTimeZoneById("South Africa Standard Time"));
                     if (iRecords != -1)
                     {
                         int studentID = Convert.ToInt32(Users[iRecords].UserName.Substring(Users[iRecords].UserName.IndexOf("-")+1));
-                        Attendance att = new Attendance() {OrgID = Convert.ToInt32(ConfigurationManager.AppSettings["OrgID"]), CreateDateTime = DateTime.Now, StudentID = studentID, Location= ConfigurationManager.AppSettings["Location"] };
+                        Attendance att = new Attendance() {OrgID = Convert.ToInt32(ConfigurationManager.AppSettings["OrgID"]), CreateDateTime = SATime, StudentID = studentID, Location= ConfigurationManager.AppSettings["Location"] };
                         APIProxy proxy = new APIProxy();
                         string res = string.Empty;
                         if (!proxy.EditAttendance(att, out res))
@@ -338,7 +346,7 @@ namespace StudentScanner
                         else
                         {
                             szMessage.Append("Thank you ! You are registered for today : " + Environment.NewLine);
-                            szMessage.Append(Users[iRecords].UserName.Substring(0, Users[iRecords].UserName.IndexOf("-")) + " at " + DateTime.Now.ToString("yyyy-MM-dd  HH:mm"));
+                            szMessage.Append(Users[iRecords].UserName.Substring(0, Users[iRecords].UserName.IndexOf("-")) + " at " + SATime.ToString("yyyy-MM-dd  HH:mm"));
                         }
                         StartTimer(Convert.ToInt32(ConfigurationManager.AppSettings["SuccessResetTime"].ToString()));
                             
@@ -362,7 +370,7 @@ namespace StudentScanner
                 szMessage.Append("Can not retrieve base template." + Environment.NewLine);
                 szMessage.Append("Error description: " + Environment.NewLine);
                 szMessage.Append( FutronicSdkBase.SdkRetCode2Message(nRetCode)  + Environment.NewLine);
-                szMessage.Append("Please notify administration.");
+               // szMessage.Append("Please notify administration.");
             }
             this.SetStatusText(szMessage.ToString());
 

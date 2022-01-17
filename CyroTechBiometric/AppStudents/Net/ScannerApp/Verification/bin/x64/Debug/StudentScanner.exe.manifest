@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
-  <asmv1:assemblyIdentity name="StudentScanner.exe" version="1.0.0.4" publicKeyToken="0000000000000000" language="en" processorArchitecture="amd64" type="win32" />
+  <asmv1:assemblyIdentity name="StudentScanner.exe" version="1.0.0.9" publicKeyToken="0000000000000000" language="en" processorArchitecture="amd64" type="win32" />
+  <description asmv2:iconFile="DSG-Logo-Regular-Alt.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
     <assemblyIdentity name="StudentScanner" version="4.2.0.1" language="neutral" processorArchitecture="amd64" />
@@ -42,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DALEFModel.dll" size="622592">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DALEFModel.dll" size="635904">
       <assemblyIdentity name="DALEFModel" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>YTvo65snTkKibkawUrcJ8hmp5qF67nLqx2nzJBajncg=</dsig:DigestValue>
+        <dsig:DigestValue>RMVTtJ5HJOqmEqUsp3FnlsuczedWxjSzoEPmMCreFkQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -61,7 +62,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>/aIL+1BRrd8Ixdi0W4pKMpB3Z5bln1trakDfGneFlmc=</dsig:DigestValue>
+        <dsig:DigestValue>iQUJpzlavi9+M85NA4JdRKbr4/NaNHBqVKslzdZPW4M=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -85,38 +86,38 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>+7UWvH/6vmEaOpwZeYfQifXFiK/XP6RuVe+9WwjlWaw=</dsig:DigestValue>
+        <dsig:DigestValue>8/gUDh7d1s0BnKOsAuTJUTxhdgbYllvBdcopD3k+nIo=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="StudentScanner.exe" size="100832">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="StudentScanner.exe" size="159712">
       <assemblyIdentity name="StudentScanner" version="4.2.0.1" language="neutral" processorArchitecture="amd64" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>NYgiEtu8W5y7PEMYHtMbOvQSNSf7grmO//drTb53Sfw=</dsig:DigestValue>
+        <dsig:DigestValue>g3XEStjHOg4O7yunWW7JOkJqle9rpbcVzb5IZM5jLYc=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="fingerprint.ico" size="67646">
+  <file name="DSG-Logo-Regular-Alt.ico" size="41662">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>z7kP0ZDQtmALMJ1R5COx1Ti9U20DU8Z0XtXXunWwJIY=</dsig:DigestValue>
+      <dsig:DigestValue>If8M4jNzVCLAQBEbR/BtgefEfOHUt+AE9VsRrzmTRJA=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="StudentScanner.exe.config" size="414">
+  <file name="StudentScanner.exe.config" size="430">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>lOmsaFPAPX+lyINXeeK3tCVwinodTde4gyFGw8tdOAU=</dsig:DigestValue>
+      <dsig:DigestValue>Yr50QTx9yVd0WBlUpDuCKjFPh4A29OgFqbANVOiDk8g=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>

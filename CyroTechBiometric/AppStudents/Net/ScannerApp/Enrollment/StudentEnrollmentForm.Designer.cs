@@ -46,6 +46,7 @@ namespace StudentEnrollment
 			this.chDetectFakeFinger = new System.Windows.Forms.CheckBox();
 			this.btnVerify = new System.Windows.Forms.Button();
 			this.groupBox2 = new System.Windows.Forms.GroupBox();
+			this.btnRefresh = new System.Windows.Forms.Button();
 			this.lblList = new System.Windows.Forms.Label();
 			this.lblSurname = new System.Windows.Forms.Label();
 			this.txtSurname = new System.Windows.Forms.TextBox();
@@ -55,7 +56,6 @@ namespace StudentEnrollment
 			this.btnIdentify = new System.Windows.Forms.Button();
 			this.btnExit = new System.Windows.Forms.Button();
 			this.txtMessage = new System.Windows.Forms.TextBox();
-			this.btnRefresh = new System.Windows.Forms.Button();
 			((System.ComponentModel.ISupportInitialize)(this.PictureFingerPrint)).BeginInit();
 			this.groupBox1.SuspendLayout();
 			this.groupBox2.SuspendLayout();
@@ -76,7 +76,6 @@ namespace StudentEnrollment
 			// PictureFingerPrint
 			// 
 			this.PictureFingerPrint.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-			this.PictureFingerPrint.ErrorImage = global::StudentEnrollment.Properties.Resources.Futronic;
 			this.PictureFingerPrint.Image = ((System.Drawing.Image)(resources.GetObject("PictureFingerPrint.Image")));
 			this.PictureFingerPrint.InitialImage = null;
 			this.PictureFingerPrint.Location = new System.Drawing.Point(403, 83);
@@ -275,6 +274,16 @@ namespace StudentEnrollment
 			this.groupBox2.TabStop = false;
 			this.groupBox2.Text = "Select student to enroll";
 			// 
+			// btnRefresh
+			// 
+			this.btnRefresh.Location = new System.Drawing.Point(6, 209);
+			this.btnRefresh.Name = "btnRefresh";
+			this.btnRefresh.Size = new System.Drawing.Size(244, 30);
+			this.btnRefresh.TabIndex = 8;
+			this.btnRefresh.Text = "Refresh student list from Ed Admin";
+			this.btnRefresh.UseVisualStyleBackColor = true;
+			this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
+			// 
 			// lblList
 			// 
 			this.lblList.AutoSize = true;
@@ -367,16 +376,6 @@ namespace StudentEnrollment
 			this.txtMessage.Size = new System.Drawing.Size(659, 29);
 			this.txtMessage.TabIndex = 7;
 			this.txtMessage.TabStop = false;
-			// 
-			// btnRefresh
-			// 
-			this.btnRefresh.Location = new System.Drawing.Point(6, 209);
-			this.btnRefresh.Name = "btnRefresh";
-			this.btnRefresh.Size = new System.Drawing.Size(244, 30);
-			this.btnRefresh.TabIndex = 8;
-			this.btnRefresh.Text = "Refresh student list from Ed Admin";
-			this.btnRefresh.UseVisualStyleBackColor = true;
-			this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
 			// 
 			// StudentEnrollmentForm
 			// 
