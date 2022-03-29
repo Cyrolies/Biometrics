@@ -25,3 +25,6 @@ C:\Projects\CyroTech\Biometrics\CyroTechBiometric\AppStudents\Net\ScannerApp\Enr
 C:\Projects\CyroTech\Biometrics\CyroTechBiometric\AppStudents\Net\ScannerApp\Enrollment\obj\x64\Debug\StudentEnrollment.TrustInfo.xml
 C:\Projects\CyroTech\Biometrics\CyroTechBiometric\AppStudents\Net\ScannerApp\Enrollment\obj\x64\Debug\StudentEnrollment.exe.manifest
 C:\Projects\CyroTech\Biometrics\CyroTechBiometric\AppStudents\Net\ScannerApp\Enrollment\obj\x64\Debug\StudentEnrollment.application
+C:\Projects\CyroTech\Biometrics\CyroTechBiometric\AppStudents\Net\ScannerApp\Enrollment\bin\x64\Debug\Resources\DSG-Logo-Regular-Alt.ico
+C:\Projects\CyroTech\Biometrics\CyroTechBiometric\AppStudents\Net\ScannerApp\Enrollment\bin\x64\Debug\StudentEnrollment_TemporaryKey.pfx
+C:\Projects\CyroTech\Biometrics\CyroTechBiometric\AppStudents\Net\ScannerApp\Enrollment\bin\x64\Debug\Futronic.bmp

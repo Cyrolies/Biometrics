@@ -1,22 +1,18 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 using System.IO;
-using System.Threading;
 using Futronic.SDKHelper;
 using Service;
 using DALEFModel;
 using System.Configuration;
-using Newtonsoft.Json;
-using System.Runtime.Serialization.Formatters.Binary;
 
 namespace StudentEnrollment
 {
-    public partial class StudentEnrollmentForm : Form
+	public partial class StudentEnrollmentForm : Form
     {
         const string kCompanyName = "CyroTech";
         const string kProductName = "SDK 4.0";
@@ -82,10 +78,11 @@ namespace StudentEnrollment
 
         public StudentEnrollmentForm()
         {
+            
             try
             {
                 InitializeComponent();
-           
+                
                 m_DatabaseDir = GetDatabaseDir();
            
 
@@ -99,7 +96,7 @@ namespace StudentEnrollment
             cbMIOTOff.Checked = dummy.MIOTControlOff;
             chFastMode.Checked = dummy.FastMode;
             SetIdentificationLimit(dummy.IdentificationsLeft);
-          //  btnStop.Enabled = false;
+                 //  btnStop.Enabled = false;
             m_bExit = false;
             int selectedIndex = 0, itemIndex;
             foreach( ComboBoxItem item in rgVersionItems )
@@ -139,11 +136,13 @@ namespace StudentEnrollment
             }
             catch (Exception ex)
             {
-                MessageBox.Show(this, "Initialization failed",
-                    ex.Message, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                throw ex;
+               // MessageBox.Show(this, "Initialization failed",
+               //     ex.Message, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+
             }
         }
-
+        
         private void SetIdentificationLimit(int nLimit)
         {
             try
@@ -715,26 +714,32 @@ namespace StudentEnrollment
         /// <returns>returns the database directory.</returns>
         public static String GetDatabaseDir()
         {
-            String szDbDir;
-            szDbDir = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData, Environment.SpecialFolderOption.Create);
-            szDbDir = Path.Combine(szDbDir, kCompanyName);
-            if (!Directory.Exists(szDbDir))
+            try
             {
-                Directory.CreateDirectory(szDbDir);
-            }
-            szDbDir = Path.Combine(szDbDir, kProductName);
-            if (!Directory.Exists(szDbDir))
-            {
-                Directory.CreateDirectory(szDbDir);
-            }
+                String szDbDir;
+                szDbDir = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData, Environment.SpecialFolderOption.Create);
+                szDbDir = Path.Combine(szDbDir, kCompanyName);
+                if (!Directory.Exists(szDbDir))
+                {
+                    Directory.CreateDirectory(szDbDir);
+                }
+                szDbDir = Path.Combine(szDbDir, kProductName);
+                if (!Directory.Exists(szDbDir))
+                {
+                    Directory.CreateDirectory(szDbDir);
+                }
 
-            szDbDir = Path.Combine(szDbDir, kDbName);
-            if (!Directory.Exists(szDbDir))
-            {
-                Directory.CreateDirectory(szDbDir);
-            }
+                szDbDir = Path.Combine(szDbDir, kDbName);
+                if (!Directory.Exists(szDbDir))
+                {
+                    Directory.CreateDirectory(szDbDir);
+                }
 
-            return szDbDir;
+                return szDbDir;
+            }catch(Exception ex)
+			{
+                throw ex;
+			}
         }
 
         protected bool isUserExists(String UserName)

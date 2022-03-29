@@ -66,7 +66,7 @@
     <OutputPath>bin\x64\Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <DebugType>full</DebugType>
-    <PlatformTarget>x64</PlatformTarget>
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <ErrorReport>prompt</ErrorReport>
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
@@ -86,7 +86,7 @@
     <ManifestKeyFile>StudentEnrollment_TemporaryKey.pfx</ManifestKeyFile>
   </PropertyGroup>
   <PropertyGroup>
-    <SignManifests>true</SignManifests>
+    <SignManifests>false</SignManifests>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="DALEFModel">
@@ -148,10 +148,14 @@
     <Compile Include="SelectMealPreferences.Designer.cs">
       <DependentUpon>SelectMealPreferences.cs</DependentUpon>
     </Compile>
-    <None Include="StudentEnrollment_TemporaryKey.pfx" />
+    <None Include="StudentEnrollment_TemporaryKey.pfx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Futronic.bmp" />
+    <None Include="Futronic.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <BaseApplicationManifest Include="Properties\app.manifest" />
@@ -160,6 +164,7 @@
     <ProjectReference Include="..\ftrSDKHelper\ftrSDKHelper.vcxproj">
       <Project>{0395DC22-3519-467C-A4E8-B45200D22E32}</Project>
       <Name>ftrSDKHelper</Name>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
     </ProjectReference>
     <ProjectReference Include="..\Service\Service.csproj">
       <Project>{2e1396c4-ef76-4e13-a41c-606d7fe2d315}</Project>
@@ -184,8 +189,9 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Resources\DSG-Logo-Regular-Alt.ico" />
-    <None Include="Resources\DSG-Logo-Regular-Alt.png" />
+    <Content Include="Resources\DSG-Logo-Regular-Alt.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
